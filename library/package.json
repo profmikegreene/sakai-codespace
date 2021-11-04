@@ -1,0 +1,20 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "description": "Sakai Library",
+  "main": "",
+  "scripts": {
+    "build-sass": "sass --style=$npm_config_outputStyle src/$npm_config_source/sass:src/webapp/skin/$npm_config_target --load-path=src/$npm_config_source/bootstrap-sass-${npm_config_bsv}/assets/stylesheets --load-path=src/$npm_config_source/font-awesome-sass-${npm_config_fav}/assets/stylesheets",
+    "lint-sass": "stylelint \"src/$npm_config_source/sass/*.scss\"",
+    "watch-sass": "sass --watch --style=$npm_config_outputStyle src/$npm_config_source/sass:$npm_config_targetDir/library/skin/$npm_config_target --load-path=src/$npm_config_source/bootstrap-sass-${npm_config_bsv}/assets/stylesheets --load-path=src/$npm_config_source/font-awesome-sass-${npm_config_fav}/assets/stylesheets"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ECL-2.0",
+  "devDependencies": {
+    "sass": "^1.30.0",
+    "stylelint": "^13.10.0",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-scss": "^3.20.1"
+  }
+}
