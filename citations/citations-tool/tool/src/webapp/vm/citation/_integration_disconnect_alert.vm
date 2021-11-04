@@ -1,0 +1,6 @@
+<span id="editor-integration-disconnect" style="display: none;">
+<br />
+<div class="sak-banner-error">
+  $tlang.getString("error.disconnect.integration")
+</div>
+</span>
