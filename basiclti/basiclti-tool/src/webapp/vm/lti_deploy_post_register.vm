@@ -1,0 +1,11 @@
+<div class="portletBody">
+#if ($messageSuccess)<div class="sak-banner-success">$tlang.getString("gen.success") $validator.escapeHtml($messageSuccess)</div>#end
+#if ($alertMessage)<div class="sak-banner-error">$tlang.getString("gen.alert") $validator.escapeHtml($alertMessage)</div>#end
+<p>
+$tlang.getString('register.done')
+</p>
+<p>
+<a href="#" onclick="window.close();">
+$tlang.getString('register.close')
+</a>
+</p>
