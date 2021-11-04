@@ -1,0 +1,119 @@
+@import "duke-colors";
+$primary-color: $bay;
+h1 {
+    font-size: 2.2em;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.8em;
+}
+
+h4 {
+    font-size: 1.6em;
+}
+h5 {
+    font-size: 1.4em;
+}
+
+.bg-navy,
+.bg-copper,
+.bg-dandelion,
+.bg-piedmont,
+.bg-magnolia,
+.bg-ironweed,
+.bg-hatteras,
+.bg-primary,
+.bg-info,
+.bg-warning,
+.bg-danger,
+.bg-success {
+    padding: 5px;
+    border-radius: 4px;
+    &,
+    &[style],
+    span[style] {
+        color: $text-color;
+    }
+}
+.bg-navy {
+    background: $navy;
+}
+.bg-copper {
+    background: $copper;
+}
+.bg-dandelion {
+    background: $dandelion;
+}
+.bg-piedmont {
+    background: $piedmont;
+}
+.bg-magnolia {
+    background: $magnolia;
+}
+.bg-ironweed {
+    background: $ironweed;
+}
+.bg-primary {
+    background-color: $primary-color;
+}
+.bg-dimmed {
+    background-color: $hatteras;
+}
+.bg-danger {
+    // background-color: $sakai-red;
+}
+.bg-ironweed,
+.bg-copper,
+.bg-navy,
+.bg-primary,
+// .bg-danger,
+.bg-magnolia{
+    &,
+    &[style],
+    span[style] {
+        color: #fff;
+    }
+}
+
+body.cke_editable {
+    padding: 16px;
+}
+// stylesdropdown
+.cke_panel_listItem {
+    a[role="option"] {
+        text-decoration: none;
+    }
+    .none,
+    .bg-navy,
+    .bg-copper,
+    .bg-dandelion,
+    .bg-piedmont,
+    .bg-magnolia,
+    .bg-ironweed,
+    .bg-hatteras,
+    .bg-primary,
+    .bg-info,
+    .bg-warning,
+    .bg-danger,
+    .bg-success,
+    .bg-dimmed,
+    .bg-danger {
+        padding: 0;
+        font-size: 1em;
+        color: $text-color;
+    }
+    .bg-ironweed,
+    .bg-copper,
+    .bg-navy,
+    // .bg-danger,
+    .bg-magnolia {
+        color: #fff;
+    }
+    a[title="Link Button"] {
+        background-color: $primary-color;
+        color: #fff !important; //sadly have to override a ckeditor style with important
+        text-decoration-color: #fff;
+    }
+}
