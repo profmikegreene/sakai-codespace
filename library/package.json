@@ -1,0 +1,19 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "description": "Sakai Library",
+  "main": "",
+  "scripts": {
+    "build": "webpack --config conf/webpack.config.js -p",
+    "buildcss": "webpack --config conf/css.config.js -p",
+    "test": "mocha -r esm"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ECL-2.0",
+  "devDependencies": {
+    "mocha": "^8.2.1",
+    "webpack": "^5.10.3",
+    "webpack-cli": "^4.2.0"
+  }
+}
